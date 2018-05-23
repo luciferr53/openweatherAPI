@@ -19,9 +19,9 @@ $(document).ready(function () {
         $.getJSON(url, function (data) {
             htmlcode += '<label class="name">' + city.toUpperCase() + '</label>';
             htmlcode += '<ul>';
-            htmlcode += '<li class="temprature"> avg temp : ' + data.main.temp + '</li>';
-            htmlcode += '<li class="temp_min"> min temp : ' + data.main.temp_min + '</li>';
-            htmlcode += '<li class="temp_max"> max temp : ' + data.main.temp_max + '</li>';
+            htmlcode += '<li class="temprature"> avg temp : ' + data.main.temp + ' F</li>';
+            htmlcode += '<li class="temp_min"> min temp : ' + data.main.temp_min + ' F</li>';
+            htmlcode += '<li class="temp_max"> max temp : ' + data.main.temp_max + ' F</li>';
             htmlcode += '</ul>';
         });
         $.ajaxSetup({
